@@ -4,119 +4,377 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Leos Wear Golden Club</title>
+    <title>Leos Wear | Golden Member Club</title>
 
+    <meta name="description" content="Exclusive Golden Member Discounts from Leos Wear">
+    <meta name="theme-color" content="#000000">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-
-    <script defer src="script.js"></script>
-</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"></head>
 
 <body>
+    <div id="loader">
+    <div class="loader-content">
+        <div class="gold-spinner"></div>
+        <h2>LEOS WEAR</h2>
+        <p>Loading Golden Offers...</p>
+    </div>
+</div>
+    <!-- Premium Background -->
+<div class="gold-bg"></div>
+
+<!-- Floating Particles -->
+<div class="particles"></div>
+
+<!-- Scroll Progress -->
+<div id="progressBar"></div>
+
+    <!-- ================= HEADER ================= -->
 
 <header>
 
-    <div class="logo">
-        LEOS WEAR
-    </div>
-
-    <div class="member">
-        GOLDEN MEMBER
-    </div>
+    <img
+    src="assets/images/logo.png"
+    alt="Leos Wear Logo"
+    class="logo">
 
 </header>
 
-<section class="hero">
+    </header>
 
-    <h1>WELCOME TO</h1>
 
-    <h2>LEOS WEAR GOLDEN CLUB</h2>
+    <!-- ================= HERO ================= -->
 
-    <p>
-        Exclusive Monthly Discounts, Secret Coupons & VIP Offers.
-    </p>
+  <section class="hero">
+
+    <div class="hero-wrapper">
+
+        <img
+        src="assets/images/hero.jpg"
+        alt="Leos Wear"
+        class="hero-image">
+
+    </div>
+
+</section>
+<section class="live-stats">
+
+    <div class="live-counter">
+
+        👥 <strong id="visitorCount">27</strong> people viewed this offer today
+
+    </div>
 
 </section>
 
-<section class="offer-card">
 
-    <h3>🎉 THIS MONTH'S OFFER</h3>
+    <!-- ================= GOLDEN CARD ================= -->
 
-    <div class="discount">
+   <!-- ================= PREMIUM OFFER CARD ================= -->
 
-        10% OFF
+<section class="offer">
+
+    <div class="offer-badge" id="offerBadge">
+        👑 GOLDEN MEMBER
+    </div>
+
+    <h1 id="offerTitle">
+        Golden Member Exclusive
+    </h1>
+
+   <p class="description" id="offerDescription">
+    Enjoy your exclusive monthly reward specially prepared for our Golden Members.
+</p>
+
+    <div class="offer-card">
+
+        <div class="offer-discount" id="offerDiscount">
+            LKR 1,000 OFF
+        </div>
+
+        <div class="offer-minimum">
+
+            <small>Minimum Purchase</small>
+
+            <strong id="minimumPurchase">
+                LKR 5,000
+            </strong>
+
+        </div>
+
+        <div class="offer-expiry">
+
+            <small>Offer Valid Until</small>
+
+            <strong id="expiryDate">
+                31 July 2026
+            </strong>
+
+        </div>
 
     </div>
+
+</section>
+
+
+
+    <!-- ================= COUNTDOWN ================= -->
+
+    <section class="countdown-section">
+
+        <h2>
+            <div id="offerStatus" class="offer-status active">
+    🟢 Offer Active
+</div>
+
+            Offer Ends In
+
+        </h2>
+
+        <div id="countdown">
+
+            <div class="time-box">
+
+                <span id="days">00</span>
+
+                <small>Days</small>
+
+            </div>
+
+            <div class="time-box">
+
+                <span id="hours">00</span>
+
+                <small>Hours</small>
+
+            </div>
+
+            <div class="time-box">
+
+                <span id="minutes">00</span>
+
+                <small>Minutes</small>
+
+            </div>
+
+            <div class="time-box">
+
+                <span id="seconds">00</span>
+
+                <small>Seconds</small>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= COUPON ================= -->
+
+    <section class="coupon">
+
+        <h2>
+
+            Your Coupon Code
+
+        </h2>
 
     <div class="coupon-box">
 
-        <h4>Your Coupon</h4>
+    <span class="shine"></span>
 
-        <div id="coupon">
+    <span id="couponCode">
+        JULY25
+    </span>
 
-            JULY25
+</div>
 
+        </div>
+
+        <button id="copyBtn">
+
+            Copy Coupon
+
+        </button>
+
+    </section>
+
+
+
+
+    <!-- ================= WHATSAPP ================= -->
+
+    <section class="whatsapp">
+
+        <a
+id="claimButton"
+class="pulse"
+href="#">
+
+            Claim Discount via WhatsApp
+
+        </a>
+
+    </section>
+
+
+
+
+    <!-- ================= TERMS ================= -->
+<section class="trust-section">
+
+    <h2>Why Shop With Leos Wear?</h2>
+
+    <div class="trust-grid">
+
+        <div class="trust-card">
+            ⭐⭐⭐⭐⭐
+            <h3>5000+ Happy Customers</h3>
+            <p>Trusted by customers across Sri Lanka.</p>
+        </div>
+
+        <div class="trust-card">
+            🚚
+            <h3>Islandwide Delivery</h3>
+            <p>Fast delivery to every district.</p>
+        </div>
+
+        <div class="trust-card">
+            🔒
+            <h3>Secure Shopping</h3>
+            <p>Safe ordering through WhatsApp.</p>
         </div>
 
     </div>
 
-    <button id="copyCoupon">
-
-        Copy Coupon
-
-    </button>
-
 </section>
+  <section class="social-section">
 
-<section class="countdown">
+    <h2>Follow Leos Wear</h2>
 
-    <h3>Offer Ends In</h3>
+    <p class="social-subtitle">
+        Follow us for New Arrivals, Flash Sales & Giveaways
+    </p>
 
-    <div id="timer">
+    <div class="footer-socials">
 
-        Loading...
+        <a href="https://www.facebook.com/leoswearsl" target="_blank" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="https://www.tiktok.com/@leosstoreclothing" target="_blank" aria-label="TikTok">
+            <i class="fa-brands fa-tiktok"></i>
+        </a>
+
+        <a href="https://www.youtube.com/@leoswear" target="_blank" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+
+        <a href="https://wa.me/94766096668" target="_blank" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
 
     </div>
 
 </section>
 
-<section class="claim">
+     <section class="faq-section">
 
-    <button id="claimBtn">
+    <h2>Frequently Asked Questions</h2>
 
-        Claim Discount via WhatsApp
+    <div class="faq-item">
 
-    </button>
+        <button class="faq-question">
+            How do I claim my discount?
+        </button>
 
-</section>
-
-<section class="products">
-
-    <h2>🔥 Latest Collection</h2>
-
-    <div class="gallery">
-
-        <div class="product">
-            Product 1
-        </div>
-
-        <div class="product">
-            Product 2
-        </div>
-
-        <div class="product">
-            Product 3
+        <div class="faq-answer">
+            <p>Click the WhatsApp button, send your coupon code and complete your purchase.</p>
         </div>
 
     </div>
 
-</section>
+    <div class="faq-item">
+
+        <button class="faq-question">
+            Can I use this coupon more than once?
+        </button>
+
+        <div class="faq-answer">
+            <p>No. Each customer can use the coupon only once.</p>
+        </div>
+
+    </div>
+
+    <div class="faq-item">
+
+        <button class="faq-question">
+            How long is this offer valid?
+        </button>
+
+        <div class="faq-answer">
+            <p>The offer is valid until the countdown reaches zero.</p>
+        </div>
+
+    </div>
+
+</section> <section class="terms">
+
+        <h3>
+
+            Terms & Conditions
+
+        </h3>
+
+        <ul>
+
+            <li>Offer valid for Golden Members only.</li>
+
+            <li>One coupon per customer.</li>
+
+            <li>Cannot be exchanged for cash.</li>
+
+            <li>Offer expires when the timer ends.</li>
+
+        </ul>
+
+    </section>
+<!-- Mobile Sticky Button -->
+
+<div class="sticky-claim">
+
+    <a href="#" id="stickyClaim">
+
+        Claim Discount
+
+    </a>
+
+</div>
+
+
+
+    <!-- ================= FOOTER ================= -->
 
 <footer>
 
-    © 2026 Leos Wear
+    <p>© 2026 Leos Wear</p>
 
 </footer>
 
-</body>
 
+
+    <!-- JS -->
+
+    <script src="script.js"></script>
+
+</body>
 </html>

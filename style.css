@@ -1,1 +1,1294 @@
+/*=========================================================
+    LEOS WEAR GOLDEN LANDING PAGE
+    Production CSS
+    Version 1.0
+==========================================================*/
 
+/*========================
+ROOT VARIABLES
+=========================*/
+
+:root{
+
+    --bg:#050505;
+    --bg2:#0d0d0d;
+    --card:#111111;
+
+    --gold:#D4AF37;
+    --gold-light:#FFD95A;
+    --gold-dark:#9F7A11;
+
+    --white:#ffffff;
+    --gray:#c9c9c9;
+    --text:#f5f5f5;
+
+    --radius:18px;
+
+    --shadow:
+    0 15px 40px rgba(0,0,0,.45);
+
+    --goldShadow:
+    0 0 25px rgba(212,175,55,.28);
+
+    --transition:.35s ease;
+
+}
+
+/*========================
+RESET
+=========================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    font-family:'Poppins',sans-serif;
+
+    overflow-x:hidden;
+
+    line-height:1.6;
+
+}
+
+/*========================
+IMAGES
+=========================*/
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+/*========================
+LINKS
+=========================*/
+
+a{
+
+    text-decoration:none;
+
+}
+
+/*========================
+BUTTONS
+=========================*/
+
+button{
+
+    font-family:inherit;
+
+    border:none;
+
+    cursor:pointer;
+
+}
+
+/*========================
+SECTIONS
+=========================*/
+
+section{
+
+    width:100%;
+
+    padding:28px 18px;
+
+}
+
+/*========================
+HEADER
+=========================*/
+
+header{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:30px 20px 10px;
+
+}
+
+.logo{
+
+    width:180px;
+
+    transition:var(--transition);
+
+    filter:
+
+    drop-shadow(0 0 18px rgba(212,175,55,.20));
+
+}
+
+.logo:hover{
+
+    transform:scale(1.03);
+
+}
+
+/*========================
+HERO
+=========================*/
+
+.hero{
+
+    padding:10px 18px 35px;
+
+}
+
+.hero-image{
+
+    width:100%;
+
+    border-radius:24px;
+
+    object-fit:cover;
+
+    box-shadow:
+
+    var(--shadow);
+
+}
+
+/*========================
+OFFER CARD
+=========================*/
+
+.offer{
+
+    margin:20px 16px;
+
+    padding:30px 24px;
+
+    border-radius:24px;
+
+    background:linear-gradient(180deg,#171717,#0b0b0b);
+
+    border:1px solid rgba(212,175,55,.18);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.45);
+
+    text-align:center;
+
+}
+
+.offer-badge{
+
+    display:inline-block;
+
+    padding:10px 20px;
+
+    border-radius:999px;
+
+    background:rgba(212,175,55,.12);
+
+    border:1px solid rgba(212,175,55,.25);
+
+    color:var(--gold-light);
+
+    font-size:.85rem;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    margin-bottom:22px;
+
+}
+
+.offer h1{
+
+    font-size:2rem;
+
+    line-height:1.2;
+
+    margin-bottom:18px;
+
+    font-weight:800;
+
+    background:
+
+    linear-gradient(
+    90deg,
+    #fff,
+    #FFD95A);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+.description{
+
+    color:#cfcfcf;
+
+    max-width:520px;
+
+    margin:18px auto 30px;
+
+    line-height:1.8;
+
+    font-size:1rem;
+
+}
+.offer-card{
+
+    margin-top:20px;
+
+    padding:28px;
+
+    border-radius:22px;
+
+    background:linear-gradient(180deg,#1b1b1b,#101010);
+
+    border:1px solid rgba(212,175,55,.15);
+
+}
+
+.offer-discount{
+
+    font-size:2.6rem;
+
+    font-weight:800;
+
+    color:var(--gold-light);
+
+    margin-bottom:28px;
+
+    text-shadow:0 0 18px rgba(212,175,55,.25);
+
+}
+
+.offer-minimum,
+.offer-expiry{
+
+    margin-top:18px;
+
+}
+
+.offer-minimum small,
+.offer-expiry small{
+
+    display:block;
+
+    color:#9f9f9f;
+
+    margin-bottom:8px;
+
+}
+
+.offer-minimum strong,
+.offer-expiry strong{
+
+    color:#ffffff;
+
+    font-size:1.15rem;
+
+}
+
+/*========================
+SMALL FADE
+=========================*/
+
+.offer,
+.hero-image,
+.logo{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:none;
+
+    }
+
+}
+/*=========================================================
+PART 02
+COUNTDOWN
+COUPON
+BUTTONS
+WHATSAPP
+TERMS
+FOOTER
+==========================================================*/
+
+/*========================
+COUNTDOWN
+=========================*/
+
+.countdown-section{
+
+    text-align:center;
+
+    padding-top:45px;
+
+}
+/*========================
+OFFER STATUS
+========================*/
+
+.offer-status{
+
+    max-width:320px;
+
+    margin:0 auto 25px;
+
+    padding:14px;
+
+    border-radius:14px;
+
+    text-align:center;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.offer-status.active{
+
+    background:rgba(37,211,102,.15);
+
+    color:#25D366;
+
+    border:1px solid rgba(37,211,102,.35);
+
+}
+
+.offer-status.expired{
+
+    background:rgba(255,59,48,.15);
+
+    color:#ff5b5b;
+
+    border:1px solid rgba(255,91,91,.35);
+
+}
+
+.countdown-section h2{
+
+    color:var(--gold);
+
+    font-size:1.4rem;
+
+    margin-bottom:25px;
+
+    font-weight:700;
+
+}
+
+#countdown{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+
+}
+
+.time-box{
+
+    background:linear-gradient(180deg,#181818,#101010);
+
+    border:1px solid rgba(212,175,55,.18);
+
+    border-radius:20px;
+
+    padding:20px 10px;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.time-box:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:var(--goldShadow);
+
+}
+
+.time-box span{
+
+    display:block;
+
+    font-size:2rem;
+
+    font-weight:800;
+
+    color:var(--gold-light);
+
+}
+
+.time-box small{
+
+    color:var(--gray);
+
+    letter-spacing:1px;
+
+}
+
+/*========================
+COUPON
+=========================*/
+
+.coupon{
+
+    text-align:center;
+
+}
+
+.coupon h2{
+
+    color:var(--gold);
+
+    margin-bottom:20px;
+
+    font-size:1.5rem;
+
+}
+
+.coupon-box{
+
+    background:linear-gradient(135deg,#FFD95A,#D4AF37);
+
+    color:#111;
+
+    font-size:2rem;
+
+    font-weight:800;
+
+    letter-spacing:4px;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    max-width:320px;
+
+    margin:0 auto 20px;
+
+    box-shadow:
+    0 15px 40px rgba(212,175,55,.30);
+
+}
+
+/*========================
+COPY BUTTON
+=========================*/
+
+#copyBtn{
+
+    width:100%;
+
+    max-width:320px;
+
+    padding:16px;
+
+    border-radius:16px;
+
+    background:linear-gradient(90deg,#FFD95A,#D4AF37);
+
+    color:#111;
+
+    font-weight:700;
+
+    font-size:1rem;
+
+    transition:var(--transition);
+
+}
+
+#copyBtn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:var(--goldShadow);
+
+}
+
+#copyBtn:active{
+
+    transform:scale(.97);
+
+}
+
+/*========================
+WHATSAPP BUTTON
+=========================*/
+
+.whatsapp{
+
+    text-align:center;
+
+    padding-top:10px;
+
+}
+
+#claimButton{
+
+    display:inline-block;
+
+    width:100%;
+
+    max-width:340px;
+
+    background:#25D366;
+
+    color:white;
+
+    padding:18px;
+
+    border-radius:18px;
+
+    font-size:1.05rem;
+
+    font-weight:700;
+
+    transition:var(--transition);
+
+    box-shadow:
+    0 15px 35px rgba(37,211,102,.35);
+
+}
+
+#claimButton:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 20px 45px rgba(37,211,102,.45);
+
+}
+
+/*========================
+TERMS
+=========================*/
+
+.terms{
+
+    margin:20px 16px;
+
+    background:#111;
+
+    border-radius:20px;
+
+    border:1px solid rgba(212,175,55,.15);
+
+    box-shadow:var(--shadow);
+
+}
+
+.terms h3{
+
+    color:var(--gold);
+
+    margin-bottom:18px;
+
+    text-align:center;
+
+}
+
+.terms ul{
+
+    list-style:none;
+
+}
+
+.terms li{
+
+    color:#d8d8d8;
+
+    padding:10px 0;
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+}
+
+.terms li:last-child{
+
+    border:none;
+
+}
+
+/*========================
+FOOTER
+=========================*/
+/*========================
+TRUST SECTION
+========================*/
+
+.trust-section{
+
+    text-align:center;
+
+}
+
+.trust-section h2{
+
+    color:var(--gold);
+
+    margin-bottom:30px;
+
+}
+
+.trust-grid{
+
+    display:grid;
+
+    gap:20px;
+
+}
+
+.trust-card{
+
+    background:linear-gradient(180deg,#181818,#101010);
+
+    border:1px solid rgba(212,175,55,.15);
+
+    border-radius:20px;
+
+    padding:24px;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+}
+
+.trust-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:var(--goldShadow);
+
+}
+
+.trust-card h3{
+
+    margin:15px 0 10px;
+
+    color:var(--gold-light);
+
+}
+
+.trust-card p{
+
+    color:#cfcfcf;
+
+}
+
+@media(min-width:768px){
+
+    .trust-grid{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+}/*========================
+FAQ
+========================*/
+
+.faq-section{
+
+    margin:20px 16px;
+
+}
+
+.faq-section h2{
+
+    color:var(--gold);
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+}
+
+.faq-item{
+
+    background:#111;
+
+    border:1px solid rgba(212,175,55,.15);
+
+    border-radius:16px;
+
+    margin-bottom:15px;
+
+    overflow:hidden;
+
+}
+
+.faq-question{
+
+    width:100%;
+
+    padding:18px;
+
+    background:none;
+
+    color:#fff;
+
+    text-align:left;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+}
+
+.faq-answer{
+
+    max-height:0;
+
+    overflow:hidden;
+
+    transition:max-height .35s ease;
+
+}
+
+.faq-answer p{
+
+    padding:0 18px 18px;
+
+    color:#cfcfcf;
+
+}
+
+.faq-item.active .faq-answer{
+
+    max-height:200px;
+
+}
+footer{
+
+    text-align:center;
+
+    padding:35px 20px;
+
+    color:#8a8a8a;
+
+    font-size:.9rem;
+
+}/*========================
+FOOTER SOCIALS
+========================*/
+
+.footer-socials{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+    margin-top:28px;
+
+}
+
+.footer-socials a{
+
+    width:72px;
+
+    height:72px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(180deg,#1a1a1a,#101010);
+
+    border:1px solid rgba(212,175,55,.20);
+
+    border-radius:18px;
+
+    color:#fff;
+
+    font-size:30px;
+
+    transition:all .35s ease;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+
+}
+
+.footer-socials a i{
+
+    transition:all .35s ease;
+
+}
+
+.footer-socials a:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--gold-light);
+
+    box-shadow:
+        0 0 20px rgba(212,175,55,.35),
+        0 12px 30px rgba(0,0,0,.40);
+
+}
+
+.footer-socials a:hover i{
+
+    transform:scale(1.2);
+
+    color:var(--gold-light);
+
+}
+
+@media(max-width:480px){
+
+    .footer-socials{
+        /*========================
+SOCIAL SECTION
+========================*/
+
+.social-section{
+
+    text-align:center;
+
+    margin:35px 16px;
+
+}
+
+.social-section h2{
+
+    color:var(--gold);
+
+    margin-bottom:10px;
+
+}
+
+.social-subtitle{
+
+    color:#bdbdbd;
+
+    font-size:.95rem;
+
+    margin-bottom:28px;
+
+}
+
+        gap:12px;
+
+    }
+
+    .footer-socials a{
+
+        width:60px;
+
+        height:60px;
+
+        font-size:26px;
+
+    }
+
+}
+
+
+/*========================
+TABLET
+=========================*/
+
+@media(min-width:768px){
+
+    section{
+
+        padding:50px;
+
+    }
+
+    .offer{
+
+        max-width:760px;
+
+        margin:auto;
+
+    }
+
+    .offer h1{
+
+        font-size:3rem;
+
+    }
+
+    #countdown{
+
+        grid-template-columns:repeat(4,1fr);
+
+        max-width:850px;
+
+        margin:auto;
+
+    }
+
+    .coupon-box{
+
+        max-width:420px;
+
+        font-size:2.6rem;
+
+    }
+
+}
+
+/*========================
+DESKTOP
+=========================*/
+
+@media(min-width:1200px){
+
+    body{
+
+        font-size:18px;
+
+    }
+
+    .logo{
+
+        width:220px;
+
+    }
+
+    .hero{
+
+        max-width:1200px;
+
+        margin:auto;
+
+    }
+
+    .hero-image{
+
+        border-radius:30px;
+
+    }
+
+}
+/*==========================
+SCROLL REVEAL
+==========================*/
+
+.hidden{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:.8s ease;
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:none;
+
+}
+/*=========================================================
+PREMIUM UPGRADE PACK
+=========================================================*/
+
+/* Animated Background */
+.gold-bg{
+    position:fixed;
+    inset:0;
+    z-index:-3;
+    background:
+        radial-gradient(circle at top,#3a2b00 0%,transparent 35%),
+        radial-gradient(circle at bottom,#1b1400 0%,transparent 45%),
+        #050505;
+}
+
+/* Floating Gold Particles */
+.particles{
+    position:fixed;
+    inset:0;
+    z-index:-2;
+    pointer-events:none;
+    overflow:hidden;
+}
+
+.particles::before,
+.particles::after{
+    content:"";
+    position:absolute;
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    background:rgba(212,175,55,.05);
+    filter:blur(70px);
+    animation:floatGlow 14s linear infinite;
+}
+
+.particles::before{
+    top:-120px;
+    left:-80px;
+}
+
+.particles::after{
+    right:-120px;
+    bottom:-120px;
+    animation-delay:7s;
+}
+
+@keyframes floatGlow{
+
+    0%{
+        transform:translateY(0) rotate(0deg);
+    }
+
+    50%{
+        transform:translateY(120px) rotate(180deg);
+    }
+
+    100%{
+        transform:translateY(0) rotate(360deg);
+    }
+
+}
+
+/* Hero Wrapper */
+.hero-wrapper{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+}
+
+/* Coupon Shine */
+
+.coupon-box{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.shine{
+
+    position:absolute;
+
+    top:-40%;
+
+    left:-120%;
+
+    width:60%;
+
+    height:180%;
+
+    transform:rotate(25deg);
+
+    background:
+
+    rgba(255,255,255,.25);
+
+    animation:shineMove 4s infinite;
+
+}
+
+@keyframes shineMove{
+
+    0%{
+
+        left:-120%;
+
+    }
+
+    100%{
+
+        left:150%;
+
+    }
+
+}
+
+/* Sticky Mobile Button */
+
+.sticky-claim{
+
+    position:fixed;
+
+    left:0;
+
+    right:0;
+
+    bottom:15px;
+
+    display:flex;
+
+    justify-content:center;
+
+    z-index:999;
+
+    pointer-events:none;
+
+}
+
+#stickyClaim{
+
+    pointer-events:auto;
+
+    background:#25D366;
+
+    color:#fff;
+
+    padding:16px 28px;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    box-shadow:0 12px 35px rgba(37,211,102,.35);
+
+    transition:.3s;
+
+}
+
+#stickyClaim:hover{
+
+    transform:translateY(-4px);
+
+}
+
+/* Toast */
+
+#toast{
+
+    position:fixed;
+
+    left:50%;
+
+    bottom:100px;
+
+    transform:translateX(-50%);
+
+    background:#111;
+
+    color:#FFD95A;
+
+    padding:14px 22px;
+
+    border-radius:30px;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.35s;
+
+    z-index:9999;
+
+    border:1px solid rgba(212,175,55,.2);
+
+}
+
+#toast.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+/* =========================
+   LOADER
+========================= */
+
+#loader{
+    position:fixed;
+    inset:0;
+    background:#0b0b0b;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+    transition:opacity .5s ease, visibility .5s ease;
+}
+
+#loader.hide{
+    opacity:0;
+    visibility:hidden;
+}
+
+.loader-content{
+    text-align:center;
+}
+
+.loader-content h2{
+    color:#d4af37;
+    margin-top:20px;
+    letter-spacing:3px;
+}
+
+.loader-content p{
+    color:#aaa;
+}
+
+.gold-spinner{
+    width:70px;
+    height:70px;
+    border:5px solid rgba(212,175,55,.2);
+    border-top-color:#d4af37;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+    margin:auto;
+}
+
+@keyframes spin{
+    to{
+        transform:rotate(360deg);
+    }
+}
