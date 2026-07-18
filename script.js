@@ -14,11 +14,11 @@ const SETTINGS = {
 
     offerTitle: "Golden Member Exclusive",
 
-    discount: "LKR 500 OFF",
+    discount: "LKR 700 OFF",
 
-    minimumPurchase: "LKR 4,000",
+    minimumPurchase: "LKR 3000",
 
-    couponCode: "JULT88",
+    couponCode: "JUL990L",
 
     expiry: "31 July 2026",
     description: "Enjoy your exclusive monthly reward specially prepared for our Golden Members.",
