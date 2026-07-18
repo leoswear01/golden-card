@@ -18,7 +18,7 @@ const SETTINGS = {
 
     minimumPurchase: "LKR 3000",
 
-    couponCode: "JUL9909",
+    couponCode: "JUL9i",
 
     expiry: "31 July 2026",
     description: "Enjoy your exclusive monthly reward specially prepared for our Golden Members.",
