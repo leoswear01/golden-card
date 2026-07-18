@@ -14,17 +14,17 @@ const SETTINGS = {
 
     offerTitle: "Golden Member Exclusive",
 
-    discount: "LKR 700 OFF",
+    discount: "LKR 399 OFF",
 
-    minimumPurchase: "LKR 3000",
+    minimumPurchase: "LKR 1500",
 
-    couponCode: "JUL556",
+    couponCode: "AWE678",
 
     expiry: "31 July 2026",
     description: "Enjoy your exclusive monthly reward specially prepared for our Golden Members.",
 
     whatsappNumber: "94766096668",
-    offerEndDate: "2026-09-01T00:00:00"
+    offerEndDate: "2026-07-30T00:00:00"
 
 };
 
